@@ -1,4 +1,4 @@
-#Hitsaus tiedon keruu sovellus
+Hitsaus tiedon keruu sovellus
 
 Hitsaus tiedonkeruu sovellus on Ryhmä 7 kehittämä ohjelmisto, joka
 helpottaa weldcuben käyttäjien elämää. Ohjelmista automatisoi virheiden
