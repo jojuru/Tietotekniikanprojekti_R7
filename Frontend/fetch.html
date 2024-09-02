@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <script src="js/main.js"></script>
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="main">
+      <p><a href="./email.html">Sähköpostihallinta</a></p>
+
+      <h1>Virheilmoitusten hallinta</h1>
+      <div style="height: 500px" id="left">
+        <div id="itemContent">
+          <h2 style="text-align: center; padding: 10px">
+            Valitse tuote oikealta valikosta tai etsiäksesi ilmoituksen valitse
+            hakuehtosi valikon yläreunasta. >
+          </h2>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            float: left;
+            height: 30px;
+            width: 100%;
+            bottom: -1px;
+          "
+          id="buttonsDiv"
+        >
+          <button onclick="checkNotification()" style="width: 34%">
+            Tuote tarkistettu
+          </button>
+          <button onclick="passCondition()" style="width: 34%">Tuote OK</button>
+          <button onclick="deleteNotification()" style="width: 34%">
+            Poista Ilmoitus
+          </button>
+        </div>
+      </div>
+
+      <div id="right">
+        <button
+          onclick="filterList(document.getElementById('filter').value)"
+          style="width: 25%"
+          id="search"
+        >
+          Hae
+        </button>
+        <input
+          style="width: 60%"
+          type="text"
+          id="filter"
+          placeholder="Valitse hakuehtosi ja kirjoita hakusanasi tähän."
+        />
+        <input type="checkbox" id="exactMatch" />
+
+        <div style="padding-top: 5px" id="list"></div>
+      </div>
+    </div>
+  </body>
+</html>

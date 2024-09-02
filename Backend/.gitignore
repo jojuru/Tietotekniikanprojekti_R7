@@ -1,0 +1,4 @@
+*/node_modules
+/Backend/mongo-api/__pycache__
+*/__pycache__
+*/__pycache__/*
